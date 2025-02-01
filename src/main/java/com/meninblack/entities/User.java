@@ -40,7 +40,7 @@ public class User {
 
     @Indexed(unique = true)
     @NonNull
-    private Long phone_number;
+    private Long phoneNumber;
 
     @NonNull
     private String name;

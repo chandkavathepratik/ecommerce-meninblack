@@ -1,6 +1,6 @@
 package com.meninblack.controllers;
 
-import com.meninblack.dto.UserDto;
+import com.meninblack.dto.UserSignupDto;
 import com.meninblack.service.PublicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,7 +15,7 @@ public class PublicController {
     private PublicService publicService;
 
     @PostMapping("/register")
-    public ResponseEntity<String> createUser(@RequestBody UserDto newUser) {
+    public ResponseEntity<String> createUser(@RequestBody UserSignupDto newUser) {
         try{
             publicService.createUser(newUser);
             return new ResponseEntity<>("User created successfully..!", HttpStatus.CREATED);

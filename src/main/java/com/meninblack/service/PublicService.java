@@ -1,6 +1,6 @@
 package com.meninblack.service;
 
-import com.meninblack.dto.UserDto;
+import com.meninblack.dto.UserSignupDto;
 import com.meninblack.entities.User;
 import com.meninblack.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,11 +16,11 @@ public class PublicService {
 
     private final PasswordEncoder passEncoder = new BCryptPasswordEncoder();
 
-    public void createUser(UserDto newUser) {
+    public void createUser(UserSignupDto newUser) {
         User user = new User();
         user.setName(newUser.getName());
         user.setEmail(newUser.getEmail());
-        user.setPhone_number(newUser.getPhone_number());
+        user.setPhoneNumber(newUser.getPhone_number());
         user.setPassword(passEncoder.encode(newUser.getPassword()));
         user.getRoles().add("User");
         user.setUsername(user.getEmail());

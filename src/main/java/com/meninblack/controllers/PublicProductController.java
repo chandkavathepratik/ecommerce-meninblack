@@ -24,7 +24,7 @@ public class PublicProductController {
             List<Product> prod = publicProductService.getAllProducts();
             return new ResponseEntity<>(prod, HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>(List.of(), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -34,7 +34,7 @@ public class PublicProductController {
             Product prod = publicProductService.getProduct(prodId);
             return new ResponseEntity<>(prod, HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -53,6 +53,16 @@ public class PublicProductController {
             return new ResponseEntity<>(publicProductService.findByAvailability(availability), HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @GetMapping("/get-product/{text}")
+    public ResponseEntity<List<Product>> search(@PathVariable String text){
+        try {
+            List<Product> prod = publicProductService.search(text);
+            return new ResponseEntity<>(prod, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }

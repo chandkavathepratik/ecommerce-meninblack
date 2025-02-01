@@ -36,10 +36,6 @@ public class AdminService {
         return oRepo.findByStatus(OrderStatus.Placed);
     }
 
-    public List<Order> getAllPendingOrders() {
-        return oRepo.findByStatus(OrderStatus.Pending);
-    }
-
     public Order getOrderById(String orderId) {
         return oRepo.findById(new ObjectId(orderId)).orElse(null);
     }

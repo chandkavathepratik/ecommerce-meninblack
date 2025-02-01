@@ -10,6 +10,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class Order {
     @NonNull
     private ObjectId customerId;
 
-    private List<OrderItem> orderItems;
+    private List<CartItem> orderItems;
 
     @NonNull
     private Double orderValue;
@@ -45,6 +46,6 @@ public class Order {
     private OrderStatus status;
 
     @NonNull
-    private String expectedDelivery;
+    private LocalDate expectedDelivery;
 
 }

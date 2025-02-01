@@ -13,12 +13,14 @@ import org.bson.types.ObjectId;
 public class CartItem {
 
         @NonNull
-        private String productId;
+        private ObjectId productId;
 
         @NonNull
         private Integer quantity;
 
         @NonNull
         private Size size;
+
+        private Double cartItemValue;
 
 }
