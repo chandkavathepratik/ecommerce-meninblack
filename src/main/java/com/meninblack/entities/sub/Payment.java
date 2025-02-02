@@ -1,15 +1,18 @@
 package com.meninblack.entities.sub;
 
-import com.meninblack.entities.enums.payment.PaymentStatus;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document(collection = "payments")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Payment {
 
     @Id
@@ -17,10 +20,12 @@ public class Payment {
 
     private double amount;
 
-    private PaymentStatus status;
+    private String status;
 
-    private LocalDate processedAt;
+    private LocalDateTime processedAt;
 
     private ObjectId orderId;
+
+    private String paymentMethod;
 
 }
