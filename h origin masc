@@ -1,0 +1,35 @@
+[33mcommit caf3084c0a75740d3bb6a6a4349c30f72e90f325[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Sun Feb 2 09:10:09 2025 +0530
+
+    Added User Related Functionalities
+
+[33mcommit c281eef3c44d41671368474711b9ff39c61b9599[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Sat Feb 1 11:54:11 2025 +0530
+
+    Added search feature and made some minor changes
+
+[33mcommit 82ab5b9275c751dbf6141e87189224c998460d0a[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Thu Jan 30 21:40:03 2025 +0530
+
+    Adding APIs for admin to control products and to read payment details
+
+[33mcommit 7b0718ed469a9741de9c50356855fd6f2288631d[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Thu Jan 30 14:22:24 2025 +0530
+
+    Added publically exposed APIs
+
+[33mcommit c9dcf511b50bffbacc0193fb80c0053812d14b9e[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Wed Jan 29 22:31:59 2025 +0530
+
+    Made mongouri private
+
+[33mcommit 5eea1d60799c8c0de2c1bff55867c5057333f6cd[m
+Author: Pratik <chandkavathepratik@gmail.com>
+Date:   Wed Jan 29 21:08:10 2025 +0530
+
+    Ecommerce Website

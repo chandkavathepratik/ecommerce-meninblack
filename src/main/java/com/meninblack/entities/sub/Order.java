@@ -34,15 +34,12 @@ public class Order {
     @NonNull
     private Address shippingAddress;
 
-    @NonNull
     private PaymentStatus paymentStatus;
 
     private ObjectId paymentId;
 
-    @NonNull
-    private LocalDateTime placedAt;
+    private LocalDateTime createdAt;
 
-    @NonNull
     private OrderStatus status;
 
     @NonNull
