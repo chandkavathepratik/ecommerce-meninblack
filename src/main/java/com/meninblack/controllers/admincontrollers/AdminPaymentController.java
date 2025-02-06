@@ -1,7 +1,7 @@
-package com.meninblack.controllers;
+package com.meninblack.controllers.admincontrollers;
 
 import com.meninblack.entities.sub.Payment;
-import com.meninblack.service.AdminPaymentService;
+import com.meninblack.service.adminservice.AdminPaymentService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

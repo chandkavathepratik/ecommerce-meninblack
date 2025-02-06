@@ -1,4 +1,4 @@
-package com.meninblack.service;
+package com.meninblack.service.adminservice;
 
 import com.meninblack.entities.sub.Payment;
 import com.meninblack.repositories.PaymentRepository;

@@ -1,9 +1,9 @@
-package com.meninblack.controllers;
+package com.meninblack.controllers.publiccontrollers;
 
 import com.meninblack.entities.Product;
 import com.meninblack.entities.enums.product.Availability;
 import com.meninblack.entities.enums.product.Category;
-import com.meninblack.service.PublicProductService;
+import com.meninblack.service.publicservice.PublicProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

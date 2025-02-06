@@ -1,15 +1,11 @@
-package com.meninblack.controllers;
+package com.meninblack.controllers.usercontrollers;
 
-import com.meninblack.entities.enums.product.Category;
 import com.meninblack.entities.sub.CartItem;
 import com.meninblack.entities.Product;
-import com.meninblack.entities.sub.Order;
-import com.meninblack.service.UserProductService;
-import org.bson.types.ObjectId;
+import com.meninblack.service.userservice.UserProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

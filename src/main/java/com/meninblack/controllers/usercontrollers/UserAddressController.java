@@ -1,7 +1,7 @@
-package com.meninblack.controllers;
+package com.meninblack.controllers.usercontrollers;
 
 import com.meninblack.entities.sub.Address;
-import com.meninblack.service.UserAddressService;
+import com.meninblack.service.userservice.UserAddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

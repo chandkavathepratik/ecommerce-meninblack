@@ -1,8 +1,8 @@
-package com.meninblack.controllers;
+package com.meninblack.controllers.usercontrollers;
 
 import com.meninblack.dto.UserDto;
 import com.meninblack.dto.UserSignupDto;
-import com.meninblack.service.UserAccountService;
+import com.meninblack.service.userservice.UserAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

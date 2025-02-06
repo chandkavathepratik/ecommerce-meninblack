@@ -1,4 +1,4 @@
-package com.meninblack.service;
+package com.meninblack.service.userservice;
 
 import com.meninblack.entities.enums.order.OrderStatus;
 import com.meninblack.entities.enums.payment.PaymentStatus;

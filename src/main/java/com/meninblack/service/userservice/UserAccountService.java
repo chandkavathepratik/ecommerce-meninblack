@@ -1,4 +1,4 @@
-package com.meninblack.service;
+package com.meninblack.service.userservice;
 
 import com.meninblack.dto.UserDto;
 import com.meninblack.dto.UserSignupDto;
